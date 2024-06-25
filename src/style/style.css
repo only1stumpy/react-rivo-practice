@@ -1,0 +1,918 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* Подгрузка шрифтов */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./fonts/gilroy-medium.ttf) format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./fonts/gilroy-regular.ttf) format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'RoadRadio';
+    src: url(./fonts/roadradio_regular.ttf) format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'RoadRadio';
+    src: url(./fonts/roadradio_bold.ttf) format('truetype');
+    font-weight: 900;
+}
+
+body {
+    background-color: #0C0C0C;
+
+}
+.background-elements {
+    background: url(../img/Background\ elements.png) no-repeat;
+    background-position: center 490px;
+    height: auto;
+    position: absolute
+}
+.main-bg{
+    background: url(../img/bg-main.png) no-repeat;
+    background-position: center top;
+    height: 10%;
+    position: relative;
+    z-index: 0;
+}
+section{
+    width: 100vw;
+}
+main{
+    width: 100vw;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px 10px;
+}
+.header-logo{
+    margin-left: 60px;
+}
+.navItem{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 21px;
+    transition: 0.3s ease;
+}
+.orderItem{
+    font-family: 'RoadRadio', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    color: #FDDD0A;
+    border: #FDDD0A 1px solid;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 0 50px;
+    transition: 0.3s ease;
+}
+.orderItem:hover{
+    color: #fff;
+    border: #fff 1px solid;
+}
+.orderArrow{
+    margin-left: 8px;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+header a {
+    color: #fff;
+    position: relative;
+}
+.menuItem{
+    font-family: 'RoadRadio', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 72px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.menuItem img {
+    margin-right: 16px;
+}
+.navItem:hover,.menuItem:hover {
+    color: #FDDD0A;
+}
+.navItem:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FDDD0A;
+    bottom: -10px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.navItem:hover:before {
+    transform: scaleX(1);
+}
+.arrExterprise{
+    margin-left: 8px;
+}
+.exterprise-nav{
+    cursor: pointer;
+}
+.dropdown-content{
+    margin-top: 10px;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #0C0C0C;
+    padding: 16px 0 16px 20px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-content a{
+    margin: 24px;
+}
+.menu-container{
+    background-color: #0C0C0C;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+.menu{
+    background: url(../img/Background\ elements\ menu.png) no-repeat;
+    background-attachment: fixed;
+    background-position: center 123px;
+    z-index: 1;
+    height: 80%;
+}
+.close-menu{
+    cursor: pointer;
+    width: 104px;
+    height: 23px;
+    padding: 18px 70px 0 0;
+}
+.menu-logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.menu-items{
+    display: flex;
+    flex-direction: row;
+}
+.menu-nav{
+    margin-right: 70px;
+    margin-left: 404px;
+    max-width: 620px;
+}
+
+.menu-item-nav{
+    font-family: 'RoadRadio',serif;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 32px;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.menu-item-nav:hover{
+    color: #FDDD0A;
+}
+.menu-item-policy{
+    color: #3F3F3F;
+    font-family: 'Gilroy', serif;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.menu-item-policy a{
+    margin-left: 100px;
+    color: #3F3F3F;
+    margin-bottom: 52px;
+}
+
+.menu-contacts{
+    position: absolute;
+    margin-left: 1720px;
+    z-index: 10;
+    margin-top: -180px;
+}
+
+
+
+@media (max-width: 768px) {
+    .navItem{
+        display: none;
+    }
+    .background-elements{
+        background: none;
+    }
+    .header-logo{
+        margin-left: 10px;
+    }
+    .orderItem{
+        margin-left: 0;
+    }
+}
+
+/* HomeMain */
+
+.main-content{
+    margin-top: 60px;
+    margin-left: 300px;
+    font-family: 'RoadRadio', sans-serif;
+    font-weight: 900;
+    font-size: 140px;
+    line-height: 140px;
+    color: #fff;
+}
+.main-title-1{
+    margin-left: 200px;
+    color: #FDDD0A;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+.main-title-2{
+    margin-left: 360px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+.main-title-3{
+    margin-left: 200px;
+}
+.main-title-4{
+    margin-left: 360px;
+}
+.main-title-5{
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+@supports not ((-webkit-text-stroke: 1px #fff)) {
+    .main-title-2, .main-title-5 {
+        color: #fff;
+        filter: drop-shadow(0 0 1px #fff);
+    }
+}
+.scroll-down{
+    margin-top: 80px;
+    position: absolute;
+    left:50%;
+}
+.main-contacts{
+    margin-left: 1720px;
+    z-index: 10;
+}
+
+@media (max-width: 768px){
+    .main-content{
+        margin-top: 140px;
+        font-size: 122px;
+        line-height: 122px;
+        margin-left: 30px;
+    }
+    .main-title-1,.main-title-2,.main-title-3,.main-title-4,.main-title-5{
+        margin-left: 0;
+    }
+    .main-title-1{
+    font-size: 21px;
+    line-height: 21px;
+    }
+    .scroll-down{
+        margin-top: 200px;
+    }
+    .main-contacts{
+        margin-left: 80%;
+        margin-top: 40px;
+    }
+}
+
+/* Стили для секций */
+
+.who-section-content h1, .services-section-content h1, .industry-section-content h1, .stack-section-content h1, .projects-section-content h1, .reviews-section-content h1, .contacts-section-content h1{
+    font-family: 'RoadRadio', sans-serif;
+    font-weight: 700;
+}
+.who-section-content p, .services-section-content p, .reviews-section-content p, .contacts-section-content p{
+    font-family: 'Gilroy',sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #B6B6B6;
+}
+.who-section-title, .services-section-title, .industry-section-title, .stack-section-title, .projects-section-title, .reviews-section-title, .contacts-section-title{
+    font-size: 52px;
+    line-height: 52px;
+}
+.who-section-title-under, .services-section-title-under, .industry-section-title-under, .stack-section-title-under, .projects-section-title-under,.reviews-section-title-under, .contacts-section-title-under{
+    font-size: 100px;
+    line-height: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px #1A1A1A;
+}
+
+
+/* Стиль для отображения в строку */
+
+.row-container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* HomeWho */
+
+.who-section-content{
+    margin-top: 750px;
+    margin-left: 400px;
+    color: #fff;
+}
+.team-container{
+    margin-top: 52px;
+    width: 35%;
+}
+.team-container p{
+    margin-top: 24px;
+}
+.company-container{
+    width: 40%;
+    margin-top: 52px;
+    margin-left: 90px;
+}
+.company-container h1{
+    margin-bottom: 24px;
+}
+.company-container p{
+    margin-bottom: 30px;
+}
+.who-section-video{
+    margin-top: -100px;
+}
+.mini-contacts{
+    margin: 10px 0 0 1020px;
+}
+.rotate{
+    animation: rotate 7s linear infinite;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px){
+    .who-section-content{
+        margin-left: 30px;
+    }
+    .row-container{
+        flex-direction: column;
+    }
+    .team-container, .company-container{
+        width: 90vw;
+    }
+    .company-container, .who-section-video{
+        margin: 52px 0 0;
+    }
+    .mini-contacts{
+        margin-left: 85%;
+    }
+}
+
+
+
+/* HomeServices */
+
+.services-section-content{
+    color: #fff;
+    width: 1200px;
+    margin: 200px 0 0 404px;
+}
+.services-section-title-under, .industry-section-title-under{
+    margin-bottom: 52px;
+}
+.webdev-container,.mobdev-container{
+    margin-right: 30px;
+}
+.webdev-container h1,.mobdev-container h1,.customdev-container h1{
+    margin: 30px 0 24px;
+}
+.webdev-container p,.mobdev-container p,.customdev-container p{
+    margin-bottom: 32px;
+}
+.order-button{
+    color: #FDDD0A;
+    text-decoration: none;
+    font-family: 'RoadRadio', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+}
+.order-button img{
+    margin-left: 8px;
+}
+@media (max-width: 768px){
+    .services-section-content{
+        margin: 100px 0 0 30px;
+        width: 90vw;
+    }
+    .webdev-container, .mobdev-container{
+        margin-bottom: 52px;
+    }
+}
+
+
+/* HomeIndustry */
+
+.industry-section-content{
+    color: #fff;
+    width: 1200px;
+    margin: 140px auto 0;
+}
+.industry-buttons, .stack-webdev, .stack-mobdev, .stack-devops{
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.industry-buttons a, .stack-webdev a, .stack-mobdev a, .stack-devops a{
+    color: #fff;
+    width: 255px;
+    height: 135px;
+    border: #212121 1px solid;
+    margin: 0 30px 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'RoadRadio', sans-serif;
+    font-weight: 700;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+    z-index: 999;
+
+}
+.industry-buttons a:hover, .stack-webdev a:hover, .stack-mobdev a:hover, .stack-devops a:hover{
+    border-left:#FDDD0A 4px solid ;
+    border-bottom:#FDDD0A 4px solid ;
+}
+@media (max-width: 768px){
+    .industry-section-content{
+        margin: 72px 0 0 30px;
+    }
+    .industry-buttons{
+        width: 100vw;
+    }
+    .industry-buttons a, .stack-webdev a, .stack-mobdev a, .stack-devops a{
+        width: 340px;
+        height: 135px;
+    }
+}
+
+
+/* HomeStack */
+
+.stack-section-content{
+    margin: 140px auto 0;
+    color: #fff;
+    width: 1200px;
+}
+.stack-section-title-under{
+    margin-bottom: 52px;
+}
+.stack-webdev-title,.stack-mobdev-title,.stack-devops-title{
+    font-size: 24px;
+    line-height: 24px;
+    margin: 32px 0;
+}
+.stack-webdev img, .stack-mobdev img, .stack-devops img{
+    margin-bottom: 17px;
+}
+.stack-webdev a, .stack-mobdev a, .stack-devops a{
+    width: 160px;
+    height: 123px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+.industry-section-title-under{
+    font-size: 80px;
+}
+@media (max-width: 768px){
+    .stack-section-content{
+        margin: 72px 0 0 30px;
+        width: 100vw;
+    }
+    .stack-webdev a, .stack-mobdev a, .stack-devops a{
+        width: 150px;
+    }
+}
+
+
+/* HomeProjects */
+
+.projects-section-content{
+    margin: 140px 0 0 400px;
+    color: #fff;
+}
+.projects-section-title-under{
+    margin-bottom: 52px;
+}
+.card-container{
+    writing-mode: vertical-lr;
+    margin-bottom: 52px;
+    text-decoration: none;
+    position: relative;
+}
+.card-title{
+    transform: rotate(180deg);
+    text-align: right;
+    font-family: 'Gilroy', serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin-right: 33px;
+}
+.card-img{
+    transition: 0.5s ease;
+    width: 100%;
+    height: 100%;
+}
+.card-img:hover{
+    border-left:#FDDD0A 4px solid ;
+    border-bottom:#FDDD0A 4px solid ;
+    opacity: 30%;
+}
+.view-proj{
+    color:#FDDD0A;
+    font-family: 'RoadRadio', serif;
+    font-weight: 400;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    writing-mode: lr-tb;
+    transform: translate(-50%, -50%);
+}
+.view-proj-img{
+    margin-left: 8px;
+    transform: rotate(45deg);
+}
+.card-project{
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    align-items: center;
+    justify-content: center; 
+    height: 300px;
+}
+.proj-cases-button{
+    width: 896px;
+    margin-left: 66px;
+    font-family: 'RoadRadio', serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #FDDD0A;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    height: 100px;
+    border: #FDDD0A 1px solid;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+.proj-cases-button img{
+    margin-left: 12px;
+    max-width: 9px;
+    max-height: 9px;
+}
+.proj-cases-button:hover{
+    border: #fff 1px solid;
+}
+
+@media (max-width: 768px){
+    .projects-section-content{
+        margin: 72px 0 0 30px;
+        width: 95vw;
+    }
+    .proj-cases-button{
+        width: 708px;
+        margin-left: 0;
+    }
+}
+
+
+
+/* HomeReviews */
+
+.reviews-section-content{
+    margin: 140px 0 0 404px;
+    color: #fff;
+    width: 1100px;
+    position: relative;
+}
+.card-reviews-container{
+    display: flex;
+    flex-direction: row;
+}
+.card-reviews-content{
+    margin-top: 113px;
+    width: 540px;
+}
+.card-reviews-title{
+    font-weight: 700;
+    font-size: 15px;
+    color: #FDDD0A;
+    margin-bottom: 20px;
+}
+.card-reviews-name{
+    font-size: 32px;
+}
+.card-reviews-message{
+    margin: 24px 0 50px;
+    max-width: 500px;
+}
+.card-reviews-img{
+    margin: 52px 0 0 290px;
+}
+.arrnav2{
+    transform: rotate(180deg);
+    margin-left: 30px;
+}
+.reviews-navigation{
+    position: absolute;
+    right: 0;
+    margin-top: 52px;
+}
+.arrnav1, .arrnav2{
+    cursor: pointer;
+    transform: 0.5s ease;
+}
+.arrnav1:hover, .arrnav2:hover{
+    filter: invert(91%) sepia(94%) saturate(1385%) hue-rotate(7deg) brightness(90%) contrast(107%);
+}
+.reviews-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 0 20px;
+    position: absolute;
+}
+.pagin, .pagin-active {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.pagin-active {
+    animation: rotate 10s infinite linear;
+}
+.reviews-navigation {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 768px){
+    .reviews-section-content{
+        margin: 72px 0 0 30px;
+        width: 95vw;
+    }
+    .card-reviews-img{
+        margin-left: 0;
+    }
+    .card-reviews-content{
+        width: 350px;
+    }
+    .reviews-navigation{
+        margin-right: 30px;
+    }
+}
+
+
+
+/* FormContacts */
+
+.contacts-section-content{
+    color: #fff;
+    margin: 350px 0 236px 404px;
+
+}
+.styled-form {
+    border-radius: 8px;
+    width: 540px;
+    margin-right: 125px;
+
+}
+.styled-form p{
+    margin: 30px 0;
+}
+input {
+    width: 100%;
+    border: none;
+    border-bottom: #272727 1px solid;
+    font-family: 'Gilroy', serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    background-color: transparent;
+    padding-bottom: 5px;
+    transition: 0.5s ease;
+    outline: none;
+}
+input::placeholder{
+    color: #3F3F3F;
+}
+input:hover{
+    border-bottom-color: #949494;
+}
+.error-border{
+    border-bottom-color: #ff4d4d !important;
+}
+.error {
+    color: #ff4d4d;
+    font-size: 13px;
+    font-family: 'Gilroy', serif;
+    font-weight: 500;
+    position: absolute;
+    left: 39%;
+}
+.styled-form button{
+    outline: none;
+    color: #FDDD0A;
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: center;
+    height: 55px;
+    border: #FDDD0A 1px solid;
+    margin-top: 42px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.styled-form button:hover{
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+}
+.styled-form img{
+    margin-left: 8px;
+    width: 15px;
+    height: 15px;
+}
+.contacts-section-title-under{
+    margin-bottom: 52px;
+}
+.contact-title{
+    line-height: 41.6px;
+    margin-bottom: 32px;
+}
+.telephone-1{
+    margin: 42px 0 20px;
+}
+.telephone-2{
+    margin-bottom: 42px;
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+}
+.social-icons a{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-right: 16px;
+    background-color: #1A1A1A;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.social-icons a:hover{
+    background-color: #FDDD0A;
+}
+.social-icons img:hover{
+    filter: invert(100%) brightness(1000%);
+}
+.black-to-white{
+    filter: invert(100%) brightness(1000%);
+}
+@media (max-width: 768px){
+    .contacts-section-content{
+        margin: 180px 0 0 30px;
+    }
+    .styled-form{
+        width: 90vw;
+    }
+    .contact-container{
+        margin-top: 52px;
+    }
+}
+
+
+/* Footer */
+
+.footer-nav{
+    font-family: 'RoadRadio',serif;
+    font-weight: 700;
+    font-size: 52px;
+    margin-bottom: 32px;
+    margin-left: 404px;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.footer-nav:hover{
+    color: #FDDD0A;
+}
+.footer-policy{
+    margin-top: 68px;
+    margin-left: 404px;
+    color: #3F3F3F;
+    font-family: 'Gilroy', serif;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.footer-policy a{
+    margin-left: 100px;
+    color: #3F3F3F;
+    margin-bottom: 52px;
+}
+@media (max-width: 768px){
+    .contacts-section-content{
+        margin-bottom: 120px;
+    }
+    .footer-nav{
+        margin-left: 30px;
+    }
+    .footer-policy{
+        margin-left: 0;
+    }
+    body{
+    }
+}
+
+/* Contacts */
+.contact-container{
+    color: #fff;
+}
+.contact-container h1{
+    font-family: 'RoadRadio', serif;
+    font-weight: 700;
+}
+.contact-container p{
+    font-family: 'Gilroy', serif;
+    font-weight: 500;
+    color: #B6B6B6;
+}
