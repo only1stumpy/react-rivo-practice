@@ -414,9 +414,12 @@ header a {
     .main-contacts{
         display: none;
     }
+    
     .scroll-down{
-        margin: 200px auto 0;
-        display: block;
+        width: 100vw;
+        display: flex;
+        left: 0;
+        justify-content: center;
     }
 }
 
