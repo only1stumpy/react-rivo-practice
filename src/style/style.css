@@ -5,6 +5,9 @@
 a{
     text-decoration: none;
 }
+html, body {
+    overflow-x: hidden;
+}
 
 
 /* Подгрузка шрифтов */
@@ -32,13 +35,14 @@ a{
 
 body {
     background-color: #0C0C0C;
-
 }
 .background-elements {
     background: url(../img/Background\ elements.png) no-repeat;
-    background-position: center 490px;
+    background-position: center 385px;
     height: auto;
-    position: absolute
+    position: absolute;
+    width: 100vw;
+
 }
 .main-bg{
     background: url(../img/bg-main.png) no-repeat;
@@ -46,12 +50,6 @@ body {
     height: 10%;
     position: relative;
     z-index: 0;
-}
-section{
-    width: 100vw;
-}
-main{
-    width: 100vw;
 }
 
 
@@ -73,6 +71,8 @@ header {
     line-height: 21px;
     margin: 0 21px;
     transition: 0.3s ease;
+    color: #fff;
+    position: relative;
 }
 .orderItem{
     font-family: 'RoadRadio', sans-serif;
@@ -109,6 +109,8 @@ header a {
     margin-right: 72px;
     transition: 0.3s ease;
     cursor: pointer;
+    color: #fff;
+    position: relative;
 }
 .menuItem img {
     margin-right: 16px;
@@ -162,7 +164,7 @@ header a {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 10px 20px;
+    padding: 50px 20px;
     box-sizing: border-box;
     opacity: 0;
     visibility: hidden;
@@ -224,10 +226,17 @@ header a {
     display: flex;
     flex-direction: row;
 }
+.policy-menu-rivo{
+    width: 150px;
+}
+.policy-menu-a{
+    width: 415px;
+}
 .menu-item-policy a{
-    margin-left: 100px;
+    padding-left: 100px;
     color: #3F3F3F;
     margin-bottom: 52px;
+    width: 200px;
 }
 
 .menu-contacts{
@@ -251,6 +260,19 @@ header a {
     }
     .orderItem{
         margin-left: 0;
+    }
+    .menu-items{
+        flex-direction: column-reverse;
+    }
+    .menu-nav{
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .menu{
+        background: none;
+    }
+    .contact-title{
+        margin-top: 50px;
     }
 }
 
@@ -897,9 +919,7 @@ input:hover{
         margin-left: 30px;
     }
     .footer-policy{
-        margin-left: 0;
-    }
-    body{
+        margin-left: 30px;
     }
 }
 
