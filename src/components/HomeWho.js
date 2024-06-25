@@ -23,7 +23,7 @@ export default function Who(){
                             </div>
                         </div>
                         <img src={video} alt='video' className='who-section-video'/>
-                        <a href='#' className='mini-contacts'><img src={contactmini} alt='contact' className='rotate'/></a>
+                        <a href='/contacts-section' className='mini-contacts'><img src={contactmini} alt='contact' className='rotate'/></a>
                     </div>
                 </section>
     )

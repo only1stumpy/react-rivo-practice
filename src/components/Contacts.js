@@ -12,10 +12,10 @@ export default function Contacts(){
             <p className='telephone-1'>+1 347 705 79 35</p>
             <p className='telephone-2'>+380 96 424 71 50</p>
             <div className='social-icons'>
-                <a href='#'><img src={facebook} alt=''/></a>
-                <a href='#'><img src={linkedin} alt=''/></a>
-                <a href='#'><img src={instagram} alt='' className='black-to-white'/></a>
-                <a href='#'><img src={twitter} alt=''/></a>
+                <a href='https://www.facebook.com/?locale=ru_RU'><img src={facebook} alt=''/></a>
+                <a href='https://ru.linkedin.com/'><img src={linkedin} alt=''/></a>
+                <a href='https://www.instagram.com/'><img src={instagram} alt='' className='black-to-white'/></a>
+                <a href='https://twitter.com/?lang=ru'><img src={twitter} alt=''/></a>
             </div>
         </div>
     )

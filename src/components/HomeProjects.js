@@ -19,7 +19,7 @@ export default function Projects() {
             <CardProj title="Haul Cars" imgSrc={proj3} />
             <CardProj title="Skyline Energy" imgSrc={proj4} />
             <CardProj title="Jotul" imgSrc={proj5} />
-            <a href='#' className='proj-cases-button'>показать больше проектов<img src={arrow} alt=''/></a>
+            <a href='/projects' className='proj-cases-button'>показать больше проектов<img src={arrow} alt=''/></a>
         </div>
     </section>
     )
@@ -33,7 +33,7 @@ const CardProj = ({title, imgSrc}) => {
         onMouseLeave={() => setIsHovered(false)}
         >
             <h1 className='card-title'>{title}</h1>
-            <a href='#' className='card-project'><img className='card-img' src={imgSrc} alt=''/>
+            <a href={`/project/${title}`} className='card-project'><img className='card-img' src={imgSrc} alt=''/>
             {(isHovered && 
                 <h2 className='view-proj'>посмотреть проект<img src={arrow} alt='' className='view-proj-img'/></h2>
                 )}

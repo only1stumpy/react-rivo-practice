@@ -13,7 +13,7 @@ export default function Main(){
                 <div className='main-title-5'>весь мир</div>
             </div>
             <a href='#who-section' className='scroll-down'><img src={scrolldown} alt='scroll down'/></a>
-            <a href='#' className='main-contacts'><img src={contact} alt='contact' className='rotate'/></a>
+            <a href='#contacts-section' className='main-contacts'><img src={contact} alt='contact' className='rotate'/></a>
         </main>
     )
 }

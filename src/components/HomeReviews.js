@@ -25,7 +25,7 @@ const CardReviews = ({title, name, message, imgSrc}) =>{
                 <h1 className='card-reviews-title'>{title}</h1>
                 <h1 className='card-reviews-name'>{name}</h1>
                 <p className='card-reviews-message'>{message}</p>
-                <a href='#'><img src={clutch} alt=''/></a>
+                <a href='https://clutch.co/'><img src={clutch} alt=''/></a>
             </div>
             <img className='card-reviews-img' src={imgSrc} alt=''/>
         </div>
