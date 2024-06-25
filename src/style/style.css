@@ -1,13 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
 }
 html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
+
 
 
 /* Подгрузка шрифтов */
@@ -35,6 +41,9 @@ html, body {
 
 body {
     background-color: #0C0C0C;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
 }
 .background-elements {
     background: url(../img/Background\ elements.png) no-repeat;
@@ -184,8 +193,6 @@ header a {
 }
 .close-menu{
     cursor: pointer;
-    width: 104px;
-    height: 23px;
     padding: 18px 70px 0 0;
 }
 .menu-logos{
@@ -225,6 +232,7 @@ header a {
     font-size: 15px;
     display: flex;
     flex-direction: row;
+    margin-top: 52px;
 }
 .policy-menu-rivo{
     width: 150px;
@@ -238,7 +246,6 @@ header a {
     margin-bottom: 52px;
     width: 200px;
 }
-
 .menu-contacts{
     position: absolute;
     margin-left: 1720px;
@@ -249,6 +256,9 @@ header a {
 
 
 @media (max-width: 768px) {
+    body{
+        max-width: 100%;
+    }
     .navItem{
         display: none;
     }
@@ -262,17 +272,61 @@ header a {
         margin-left: 0;
     }
     .menu-items{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .menu-nav{
         margin-left: 0;
-        margin-top: 50px;
+        margin-top: 100px;
     }
     .menu{
         background: none;
     }
-    .contact-title{
-        margin-top: 50px;
+    .menu-contacts{
+        display: none;
+    }
+}
+@media (max-width: 375px){
+    
+    .main-bg{
+        background: url(../img/Image\ background\ tel.png) no-repeat;
+        background-position: center top;
+        height: 10%;
+        position: relative;
+        z-index: 0;
+    }
+    .orderItem{
+        display:none;
+    }
+    .menuItem{
+        margin: 0;
+    }
+    .menu-item-nav{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .menu-nav{
+        margin-right: 0;
+    }
+    .menu-item-policy{
+        display: block;
+    }
+    .policy-menu-a{
+        width: 250px;
+        line-height: 20px;
+    }
+    .close-menu{
+        padding: 0;
+        margin-right: 30px;
+        
+    width: 104px;
+    height: 23px;
+    }
+    .menu-logos{
+        padding: 0 13px;
+        width: 100vw;
+    }
+    .header-logo{
+        margin: 0;
     }
 }
 
@@ -345,6 +399,24 @@ header a {
     .main-contacts{
         margin-left: 80%;
         margin-top: 40px;
+    }
+}
+@media (max-width: 375px){
+    .main-content{
+        font-size: 60px;
+        line-height: 60px;
+        margin-left: 15px;
+    }
+    .main-title-1{
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .main-contacts{
+        display: none;
+    }
+    .scroll-down{
+        margin: 200px auto 0;
+        display: block;
     }
 }
 
@@ -439,10 +511,34 @@ header a {
         margin: 52px 0 0;
     }
     .mini-contacts{
+        max-width: 100%;
         margin-left: 85%;
+        box-sizing: border-box;
+    }
+    .who-section-video{
+        max-width: 100%;
     }
 }
-
+@media (max-width: 375px){
+    .mini-contacts{
+        margin-left: 75%;
+    }
+    .who-section-content{
+        margin-top: 350px;
+        margin-left: 15px;
+    }
+    .who-section-title, .services-section-title, .industry-section-title, .stack-section-title, .projects-section-title, .reviews-section-title, .contacts-section-title{
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+    .who-section-title-under, .services-section-title-under, .industry-section-title-under, .stack-section-title-under, .projects-section-title-under,.reviews-section-title-under, .contacts-section-title-under{
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+    }
+    
+}
 
 
 /* HomeServices */
@@ -484,7 +580,11 @@ header a {
         margin-bottom: 52px;
     }
 }
-
+@media (max-width: 375px){
+    .services-section-content{
+        margin-left: 15px;
+    }
+}
 
 /* HomeIndustry */
 
@@ -523,16 +623,28 @@ header a {
 @media (max-width: 768px){
     .industry-section-content{
         margin: 72px 0 0 30px;
+        max-width: 96%;
     }
     .industry-buttons{
-        width: 100vw;
+        max-width: 96vw;
+    }
+    .right-zero{
+        margin-right: 0 !important;
     }
     .industry-buttons a, .stack-webdev a, .stack-mobdev a, .stack-devops a{
         width: 340px;
         height: 135px;
     }
 }
-
+@media (max-width: 375px){
+    .industry-section-content{
+        margin-left: 15px;
+        overflow: hidden;
+    }
+    .right-zero{
+        margin-right: 30px !important;
+    }
+}
 
 /* HomeStack */
 
@@ -567,13 +679,17 @@ header a {
 @media (max-width: 768px){
     .stack-section-content{
         margin: 72px 0 0 30px;
-        width: 100vw;
+        max-width: 96%;
     }
     .stack-webdev a, .stack-mobdev a, .stack-devops a{
         width: 150px;
     }
 }
-
+@media (max-width: 375px){
+    .stack-section-content{
+        margin-left: 15px;
+    }
+}
 
 /* HomeProjects */
 
@@ -663,11 +779,30 @@ header a {
 @media (max-width: 768px){
     .projects-section-content{
         margin: 72px 0 0 30px;
-        width: 95vw;
+        max-width: 100%;
     }
     .proj-cases-button{
         width: 708px;
         margin-left: 0;
+    }
+    .card-container{
+        max-width: 100%;
+    }
+    .card-img{
+        max-width: 87vw;
+        object-fit:cover;
+    }
+}
+@media (max-width: 375px){
+    .projects-section-content{
+        margin-left: 15px;
+    }
+    .card-img{
+        max-width: 77vw;
+        object-fit:cover;
+    }
+    .proj-cases-button{
+        width: 95vw;
     }
 }
 
@@ -754,6 +889,14 @@ header a {
     }
     .reviews-navigation{
         margin-right: 30px;
+    }
+}
+@media (max-width: 375px){
+    .reviews-section-content{
+        margin-left: 15px;
+    }
+    .card-reviews-container{
+        flex-direction: column;
     }
 }
 
@@ -880,6 +1023,11 @@ input:hover{
         margin-top: 52px;
     }
 }
+@media (max-width: 375px){
+    .contacts-section-content{
+        margin-left: 15px;
+    }
+}
 
 
 /* Footer */
@@ -922,7 +1070,16 @@ input:hover{
         margin-left: 30px;
     }
 }
-
+@media (max-width: 375px){
+    .footer-nav{
+        margin-left: 15px;
+        font-size: 32px;
+    }
+    .footer-policy{
+        display: block;
+        margin-left: 15px;
+    }
+}
 /* Contacts */
 .contact-container{
     color: #fff;

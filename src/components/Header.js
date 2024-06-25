@@ -88,12 +88,12 @@ function Menu({handleMenuOpen})  {
             <a href='/#contacts-section' onClick={handleMenuOpen}><h1 className='menu-item-nav'>контакты</h1></a>
             <a href='/career' onClick={handleMenuOpen}><h1 className='menu-item-nav'>вакансии</h1></a>
             <a href='/blog' onClick={handleMenuOpen}><h1 className='menu-item-nav'>блог</h1></a>
-            <div className='menu-item-policy'>
+          </div>
+          <Contacts/>
+          <div className='menu-item-policy'>
                 <p className='policy-menu-rivo'>2024 © Rivo Agency</p>
                 <a href='/policy'><p className='policy-menu-a'>Политика конфиденциальности и Условия использования</p></a>
             </div>
-          </div>
-          <Contacts/>
         </div>
         <a href='/#contacts-section' className='menu-contacts'><img src={contact} alt='contact' className='rotate'/></a>
 
