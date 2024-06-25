@@ -42,7 +42,7 @@ export default function Header() {
                 <a href ="#services-section" className='navItem'>Услуги</a>
                 <a href ="#projects" className='navItem'>Проекты</a>
                 <div className='dropdown' ref={dropdownRef}>
-                <a onClick={handleExterpriseOpen} className='navItem exterprise-nav'>Exterprise<img src={arr} alt='arrow' className='arrExterprise' /></a>
+                <a href='/' onClick={handleExterpriseOpen} className='navItem exterprise-nav'>Exterprise<img src={arr} alt='arrow' className='arrExterprise' /></a>
                 {isDropdownOpen && (
                   <div className={`dropdown-content ${isDropdownOpen ? 'show' : ''}`}>
                     <a href='/exterprise' className='navItem'>Healthcare & Fitness</a>

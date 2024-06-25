@@ -15,7 +15,7 @@ export default function Footer() {
             <a href='/blog'><h1 className='footer-nav'>blog</h1></a>
             <div className='footer-policy'>
                 <p>2024 © Rivo Agency</p>
-                <a href='#'><p>Privacy Policy & Term of Use</p></a>
+                <a href='/policy'><p>Privacy Policy & Term of Use</p></a>
             </div>
         </footer>
     )

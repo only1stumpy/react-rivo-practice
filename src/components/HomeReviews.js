@@ -68,8 +68,8 @@ const Review = () => {
                     ))}
                 </div>
                 <div className='reviews-navigation'>
-                    <img src={arrnav} onClick={handlePrev} className='arrnav1' />
-                    <img src={arrnav} onClick={handleNext} className='arrnav2' />
+                    <img src={arrnav} onClick={handlePrev} className='arrnav1' alt=''/>
+                    <img src={arrnav} onClick={handleNext} className='arrnav2' alt=''/>
                 </div>
             </div>
         </div>
