@@ -32,6 +32,9 @@ const StyledForm = () => {
             setEmailError('');
         }
     };
+    const submit = () => {
+        console.log({name,email,phone,message})
+    }
 
     return (
         <form className="styled-form">
@@ -66,9 +69,9 @@ const StyledForm = () => {
                 onChange={(e)  => setMessage(e.target.value)}
             />
 
-            <button type='submit'>
+            <button type='submit' onClick={submit}>
                 <h1>ОТПРАВИТЬ</h1>
-                <img src={arrow}/>
+                <img src={arrow} alt=''/>
             </button>
         </form>
     );
