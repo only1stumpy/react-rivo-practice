@@ -1102,3 +1102,100 @@ input:hover{
     font-weight: 500;
     color: #B6B6B6;
 }
+
+
+
+/* 404 */
+.bg-404{
+    background-color: #0C0C0C;
+}
+.container-404{
+    background: url(../img/bg-404.png) no-repeat;
+}
+.content-404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    margin-top: 16vh;
+    position: relative;
+}
+.img-404{
+    margin-bottom: 42px;
+}
+.content-404 h1{
+    font-family: 'RoadRadio', serif;
+    text-align: center;
+}
+.content-404 p{
+    font-family: 'Gilroy', serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 38vw;
+    text-align: center;
+    z-index: 1;
+}
+.title-404{
+    font-size: 72px;
+    margin-bottom: 10px;
+}
+.button-404{
+    color:#FDDD0A;
+    font-weight: 400;
+    font-size: 17px;
+    width: 12vw;
+    height: 50px;
+    border: #FDDD0A 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 52px;
+}
+.button-404 img{
+    margin-left: 8px;
+}
+.scroll-down-404{
+    margin-top: 7vw;
+    margin-bottom: 1vw;
+}
+.bg-text-404{
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 3px #1A1A1A;
+    position: absolute;
+    z-index: 0;
+    top:38%;
+}
+@media (max-width:768px){
+    .content-404{
+        height: 90vh;
+        margin-top: 0;
+    }
+    .container-404{
+        background: none;
+    }
+    .content-404 p{
+        max-width: 75vw;
+    }
+    .bg-text-404{
+        top: 43%;
+    }
+    .button-404{
+        width: 60vw;
+    }
+}
+@media (max-width:375px){
+    .title-404{
+        font-size: 36px;
+    }
+    .content-404 p{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .bg-text-404{
+        font-size: 50px;
+        top: 45%;
+    }
+}

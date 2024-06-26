@@ -2,7 +2,7 @@ import '../style/style.css';
 
 export default function Footer() {
     return (
-        <footer>
+        <footer id='footer'>
             <a href='/'><h1 className='footer-nav'>home</h1></a>
             <a href='/#who-section'><h1 className='footer-nav'>кто мы</h1></a>
             <a href='/#services-section'><h1 className='footer-nav'>услуги</h1></a>
