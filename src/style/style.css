@@ -1199,3 +1199,82 @@ input:hover{
         top: 45%;
     }
 }
+
+
+
+/* Privacy Policy */
+.privacy-container{
+    color: #fff;
+    background-color: #0C0C0C;
+    background: url(../img/privacy-bg.png) no-repeat;
+    background-position: center 600px;
+}
+.privacy-content{
+    width: 38vw;
+    margin: 52px auto 260px;
+    font-family: 'Gilroy',serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+.privacy-back-button{
+    font-family: 'RoadRadio',serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+.privacy-back-button img{
+    margin-right: 16px;
+}
+.privacy-content h1{
+    margin: 52px 0;
+    font-size: 52px;
+    line-height: 68px;
+}
+.privacy-content h2{
+    font-size: 24px;
+    line-height: 24px;
+    margin: 52px 0 24px;
+}
+.privacy-content ul{
+    margin-top: 24px;
+}
+.privacy-content li{
+    margin: 0 0 40px 24px;
+    line-height: 32px;
+}
+.privacy-content ul {
+    list-style-type: none;
+}
+.privacy-content li::before {
+    content: url('../img/Ellipse.png');
+    margin-right: 20px; 
+}
+@media (max-width:768px){
+    .privacy-container{
+        background: none;
+    }
+    .privacy-content{
+        width: 70vw;
+    }
+}
+@media (max-width:375px){
+    .privacy-content{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .privacy-back-button{
+        font-size: 14px;
+    }
+    .privacy-content h1{
+        font-size: 34px;
+        line-height: 52px;
+    }
+    .privacy-content h2{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .privacy-content li{
+        line-height: 24px;
+    }
+}
