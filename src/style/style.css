@@ -230,7 +230,7 @@ header a {
     font-family: 'Gilroy', serif;
     font-weight: 500;
     font-size: 15px;
-    display: flex;
+    display: none;
     flex-direction: row;
     margin-top: 52px;
 }
@@ -256,6 +256,9 @@ header a {
 
 
 @media (max-width: 768px) {
+    .menu-item-policy{
+        display: flex;
+    }
     body{
         max-width: 100%;
     }
@@ -691,6 +694,9 @@ header a {
 @media (max-width: 375px){
     .stack-section-content{
         margin-left: 15px;
+    }
+    .stack-webdev a, .stack-mobdev a, .stack-devops a{
+        width: 40%;
     }
 }
 
