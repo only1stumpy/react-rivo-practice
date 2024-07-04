@@ -18,5 +18,5 @@ export default function Industry(){
                 </div>
             </div>
         </section>
-)
+    )
 }

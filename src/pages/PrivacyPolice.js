@@ -40,7 +40,7 @@ export default function PrivacyPolice() {
                 <p>If Rivo Agency becomes aware of a breach of the T&C, Rivo Agency may immediately implement corrective actions, including disabling access to the Website as well as removing any information, data and content provided by the user on the Website at any time, to any extent and without notice.
                 Any claims or disputed relating to the use of Website or a breach of this T&C shall be governed by the laws of the Ukraine without regard to its conflict of law provisions. Any claims and disputes shall be settled by the competent Ukrainian common court, having jurisdiction over Rivo Agency registered seat.</p>
                 <h1>Privacy Policy</h1>
-                <p>The privacy of our website’s users is very important to us, which is why we have developed this Privacy Policy so that you can understand how we collect, process, disclose, and use your personal information.
+                <p>The privacy of our websites users is very important to us, which is why we have developed this Privacy Policy so that you can understand how we collect, process, disclose, and use your personal information.
 
                 Rivo Agency. as the Data Controller of the service and personal data ensures that:</p>
                 <ul>

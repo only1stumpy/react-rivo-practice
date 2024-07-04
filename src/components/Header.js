@@ -70,7 +70,6 @@ export default function Header() {
 }
 function Menu({handleMenuOpen})  {
   return (
-    
       <div className='menu'>
         <div className='menu-logos'>
           <a href='/'><img src={logo} alt='logo' className='header-logo'/></a>
@@ -96,8 +95,6 @@ function Menu({handleMenuOpen})  {
             </div>
         </div>
         <a href='/#contacts-section' className='menu-contacts'><img src={contact} alt='contact' className='rotate'/></a>
-
       </div>
-      
   )
 }
