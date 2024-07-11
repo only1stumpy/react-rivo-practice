@@ -1278,7 +1278,7 @@ input:hover{
 
 .gdpr-container{
     width: 100vw;
-    position: fixed;
+    position:fixed;
     bottom: 0;
     height: 66px;
     border: #212121 1px solid;
@@ -1550,4 +1550,30 @@ input:hover{
     .vacancies-content{
         height: 500px;
     }
+}
+
+
+
+/* Vacancie */
+.bg-vacancie{
+    background-color: #0C0C0C;
+    background: url(../img/vacancie-bg.png) no-repeat;
+}
+.vacancie-container{
+    margin: 52px auto 140px;
+    max-width: 58vw;
+    position: relative;
+}
+.vacancie-title{
+    color: #fff;
+    font-family: 'RoadRadio',serif;
+    font-weight: 700;
+    font-size: 52px;
+    margin: 52px 0;
+}
+.vacancie-button{
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 77px;
 }

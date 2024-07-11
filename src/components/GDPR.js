@@ -1,9 +1,7 @@
-import { useState } from "react"
 import '../style/style.css'
 
 
-export default function GDPR() {
-    const [isClosed, setIsClosed] = useState(true);
+export default function GDPR({isClosed,setIsClosed}) {
 
     function closeGDPR() {
         setIsClosed(!isClosed);
