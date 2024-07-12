@@ -15,7 +15,7 @@ export default function Careers() {
             <div className='container vacancie-container'>
                 <a href='/career' className='privacy-back-button'><img src={arrow} alt=''/>back to vacancies</a>
                 <a href='/thanks' className='orderItem vacancie-button'>Apply<img src={arr} alt='arr' className='orderArrow'/></a>
-                <h1 className='vacancie-title'>Middle PHP Developer</h1>
+                <h1 className='vacancie-title'>Middle PHP Developer {id}</h1>
             </div>
             <Footer />
         </div>

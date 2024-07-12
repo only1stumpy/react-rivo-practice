@@ -1,4 +1,5 @@
 import './style/style.css'
+import './index.css'
 import Home from './pages/Home';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import NotFound from './pages/404';

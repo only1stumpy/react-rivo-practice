@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'Gilroy';
+        src: url(./style/fonts/gilroy-medium.ttf) format('truetype');
+        font-weight: 500;
+    }
+    @font-face {
+        font-family: 'Gilroy';
+        src: url(./style/fonts/gilroy-regular.ttf) format('truetype');
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: 'RoadRadio';
+        src: url(./style/fonts/roadradio_regular.ttf) format('truetype');
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: 'RoadRadio';
+        src: url(./style/fonts/roadradio_bold.ttf) format('truetype');
+        font-weight: 900;
+    }
+}
