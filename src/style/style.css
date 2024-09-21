@@ -64,106 +64,9 @@ body {
 
 /* Header */
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 20px 10px;
-    max-lines: 1;
-}
-.header-logo{
-    margin-left: 60px;
-}
-.navItem{
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    margin: 0 1.4vw;
-    transition: 0.3s ease;
-    color: #fff;
-    position: relative;
-}
-.orderItem{
-    font-family: 'RoadRadio', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 17px;
-    color: #FDDD0A;
-    border: #FDDD0A 1px solid;
-    padding: 15px;
-    box-sizing: border-box;
-    margin: 0 3vw;
-    transition: 0.3s ease;
-}
-.orderItem:hover{
-    color: #fff;
-    border: #fff 1px solid;
-}
-.orderArrow{
-    margin-left: 8px;
-}
-.header-nav {
-    display: flex;
-    align-items: center;
-    max-height: 55px;
-}
-header a {
-    color: #fff;
-    position: relative;
-}
-.menuItem{
-    font-family: 'RoadRadio', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
-    margin-right: 4vw;
-    transition: 0.3s ease;
-    cursor: pointer;
-    color: #fff;
-    position: relative;
-}
-.menuItem img {
-    margin-right: 16px;
-}
-.navItem:hover,.menuItem:hover {
+.menuItem:hover {
     color: #FDDD0A;
 }
-.navItem:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #FDDD0A;
-    bottom: -10px;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-.navItem:hover:before {
-    transform: scaleX(1);
-}
-.arrExterprise{
-    margin-left: 8px;
-}
-.exterprise-nav{
-    cursor: pointer;
-}
-.dropdown-content{
-    margin-top: 10px;
-    position: absolute;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    background-color: #0C0C0C;
-    padding: 16px 0 16px 20px;
-    z-index: 2;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
 .dropdown-content a{
     margin: 24px;
 }
@@ -180,10 +83,6 @@ header a {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-.show {
-    opacity: 1;
-    visibility: visible;
 }
 .menu{
     background: url(../img/Background\ elements\ menu.png) no-repeat;

@@ -36,29 +36,29 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   }
   return (
-        <header>
-            <a href='/'><img src={logo} alt='logo' className='header-logo'/></a>
-            <div className='header-nav'>
-                <a href ="/#services-section" className='navItem'>Услуги</a>
-                <a href ="/#projects" className='navItem'>Проекты</a>
+        <header className='flex justify-between items-center pt-[50px] px-[20px] pb-[10px] line-clamp-1'>
+            <a href='/'><img src={logo} alt='logo' className='ml-[60px]'/></a>
+            <div className='flex items-center mh-[55px]'>
+                <a href ="/#services-section" className='font-gilroy font-normal text-[18px] mx-[1.4vw] transition ease-in duration-300 text-white relative hover:text-[#FDDD0A] before:content-[""] before:block before:absolute before:w-full before:h-[2px] before:bg-[#FDDD0A] before:bottom-[-10px] before:left-0 before:scale-x-0 before:transition before:ease-in before:duration-300 hover:before:scale-x-100 md:hidden'>Услуги</a>
+                <a href ="/#projects" className='font-gilroy font-normal text-[18px] mx-[1.4vw] transition ease-in duration-300 text-white relative hover:text-[#FDDD0A] before:content-[""] before:block before:absolute before:w-full before:h-[2px] before:bg-[#FDDD0A] before:bottom-[-10px] before:left-0 before:scale-x-0 before:transition before:ease-in before:duration-300 hover:before:scale-x-100 md:hidden'>Проекты</a>
                 <div className='dropdown' ref={dropdownRef}>
-                <p onClick={handleExterpriseOpen} className='navItem exterprise-nav'>Предприятие<img src={arr} alt='arrow' className='arrExterprise' /></p>
+                <p onClick={handleExterpriseOpen} className='font-gilroy font-normal text-[18px] mx-[1.4vw] transition ease-in duration-300 text-white relative hover:text-[#FDDD0A] before:content-[""] before:block before:absolute before:w-full before:h-[2px] before:bg-[#FDDD0A] before:bottom-[-10px] before:left-0 before:scale-x-0 before:transition before:ease-in before:duration-300 hover:before:scale-x-100 md:hidden cursor-pointer box-border grid grid-flow-col items-center gap-1'>Предприятие<img src={arr} alt='arrow' className='ml-[0px]'/></p>
                 {isDropdownOpen && (
-                  <div className={`dropdown-content ${isDropdownOpen ? 'show' : ''}`}>
-                  <a href='/exterprise/healthcare-fitness' className='navItem'>Здравоохранение и фитнес</a>
-                  <a href='/exterprise/retail-ecommerce' className='navItem'>Розничная торговля и e-commerce</a>
-                  <a href='/exterprise/real-estate' className='navItem'>Недвижимость</a>
-                  <a href='/exterprise/custom-crm' className='navItem'>Индивидуальная CRM</a>
-                  <a href='/exterprise/education-elearning' className='navItem'>Образование и e-learning</a>
-                  <a href='/exterprise/food-restaurant' className='navItem'>Питание и рестораны</a>
-                  <a href='/exterprise/logistic-distribution' className='navItem'>Логистика и дистрибуция</a>
+                  <div className={`mt-[10px] absolute flex flex-col items-start bg-[#0C0C0C] py-4 pl-5 z-20  transition-opacity duration-300 ease-in `}>
+                  <a href='/exterprise/healthcare-fitness' className='m-[24px] font-gilroy font-normal text-[18px] mx-[1.4vw] transition ease-in duration-300 text-white relative hover:text-[#FDDD0A] before:content-[""] before:block before:absolute before:w-full before:h-[2px] before:bg-[#FDDD0A] before:bottom-[-10px] before:left-0 before:scale-x-0 before:transition before:ease-in before:duration-300 hover:before:scale-x-100 md:hidden'>Здравоохранение и фитнес</a>
+                  <a href='/exterprise/retail-ecommerce' className='font-gilroy m-[24px]  font-normal text-[18px] mx-[1.4vw] transition ease-in duration-300 text-white relative hover:text-[#FDDD0A] before:content-[""] before:block before:absolute before:w-full before:h-[2px] before:bg-[#FDDD0A] before:bottom-[-10px] before:left-0 before:scale-x-0 before:transition before:ease-in before:duration-300 hover:before:scale-x-100 md:hidden'>Розничная торговля и e-commerce</a>
+                  <a href='/exterprise/real-estate' className='font-gilroy font-normal m-[24px] text-[18px] mx-[1.4vw] transition ease-in duration-300 text-white relative hover:text-[#FDDD0A] before:content-[""] before:block before:absolute before:w-full before:h-[2px] before:bg-[#FDDD0A] before:bottom-[-10px] before:left-0 before:scale-x-0 before:transition before:ease-in before:duration-300 hover:before:scale-x-100 md:hidden'>Недвижимость</a>
+                  <a href='/exterprise/custom-crm' className='font-gilroy font-normal text-[18px] m-[24px]  mx-[1.4vw] transition ease-in duration-300 text-white relative hover:text-[#FDDD0A] before:content-[""] before:block before:absolute before:w-full before:h-[2px] before:bg-[#FDDD0A] before:bottom-[-10px] before:left-0 before:scale-x-0 before:transition before:ease-in before:duration-300 hover:before:scale-x-100 md:hidden'>Индивидуальная CRM</a>
+                  <a href='/exterprise/education-elearning' className='font-gilroy font-normal text-[18px] m-[24px] mx-[1.4vw] transition ease-in duration-300 text-white relative hover:text-[#FDDD0A] before:content-[""] before:block before:absolute before:w-full before:h-[2px] before:bg-[#FDDD0A] before:bottom-[-10px] before:left-0 before:scale-x-0 before:transition before:ease-in before:duration-300 hover:before:scale-x-100 md:hidden'>Образование и e-learning</a>
+                  <a href='/exterprise/food-restaurant' className='font-gilroy font-normal text-[18px] mx-[1.4vw] m-[24px] transition ease-in duration-300 text-white relative hover:text-[#FDDD0A] before:content-[""] before:block before:absolute before:w-full before:h-[2px] before:bg-[#FDDD0A] before:bottom-[-10px] before:left-0 before:scale-x-0 before:transition before:ease-in before:duration-300 hover:before:scale-x-100 md:hidden'>Питание и рестораны</a>
+                  <a href='/exterprise/logistic-distribution' className='font-gilroy font-normal text-[18px] mx-[1.4vw] m-[24px] transition ease-in duration-300 text-white relative hover:text-[#FDDD0A] before:content-[""] before:block before:absolute before:w-full before:h-[2px] before:bg-[#FDDD0A] before:bottom-[-10px] before:left-0 before:scale-x-0 before:transition before:ease-in before:duration-300 hover:before:scale-x-100 md:hidden'>Логистика и дистрибуция</a>
               </div>
                 )}
               </div>
-                <a href ="/#contacts-section" className='navItem'>Контакты</a>
-                <a href ="/career" className='navItem'>Вакансии</a>
-                <a href ="/order" className='orderItem'>Сделать заказ<img src={arrow} alt='arrow' className='orderArrow'/></a>
-                <p onClick={handleMenuOpen} className='menuItem'><img src={menu} alt='arrow'/>Меню</p>
+                <a href ="/#contacts-section" className='font-gilroy font-normal text-[18px] mx-[1.4vw] transition ease-in duration-300 text-white relative hover:text-[#FDDD0A] before:content-[""] before:block before:absolute before:w-full before:h-[2px] before:bg-[#FDDD0A] before:bottom-[-10px] before:left-0 before:scale-x-0 before:transition before:ease-in before:duration-300 hover:before:scale-x-100 md:hidden'>Контакты</a>
+                <a href ="/career" className='font-gilroy font-normal text-[18px] mx-[1.4vw] transition ease-in duration-300 text-white relative hover:text-[#FDDD0A] before:content-[""] before:block before:absolute before:w-full before:h-[2px] before:bg-[#FDDD0A] before:bottom-[-10px] before:left-0 before:scale-x-0 before:transition before:ease-in before:duration-300 hover:before:scale-x-100 md:hidden'>Вакансии</a>
+                <a href ="/order" className='font-road font-normal text-[17px] text-[#FDDD0A] border border-[#FDDD0A] p-[15px] mx-[3vw] transition ease-in duration-300 hover:filter hover:grayscale hover:brightness-[1000%] grid grid-flow-col items-center gap-2 '>Сделать заказ<img src={arrow} alt='arrow'/></a>
+                <p onClick={handleMenuOpen} className='font-road font-bold text-[18px] mr-[4vw] transition ease-in duration-300 cursor-pointer text-white relative grid grid-flow-col items-center gap-2 '><img src={menu} alt='arrow'/>Меню</p>
                 {isMenuOpen &&
                   <div className={`menu-container ${isMenuOpen ? 'show' : ''}`}>
                     <Menu handleMenuOpen={handleMenuOpen}/>
