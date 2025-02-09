@@ -1,4 +1,4 @@
-# Link: https://react-rivo-practice.netlify.app/
+# Link/Ссылка: https://react-rivo-practice.netlify.app/
 ---
 ### **ENG**  
 **React Rivo Practice** is a multi-page website built using **React**, **React Router**, and **Tailwind CSS**. This project demonstrates how to implement routing for multiple pages and utilize Tailwind for responsive design and styling. The site is designed to provide a smooth user experience with a clean and modular layout.
